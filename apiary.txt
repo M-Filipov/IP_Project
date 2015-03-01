@@ -1,0 +1,37 @@
+FORMAT: 1A
+
+# Dota2OnlineBuilder
+Choose a hero, choose items and spells and see the exact stats. Register and save your build to easily access it anytime.
+
+# Service api [/api]
+Notes related resources of the **Notes API**
+
+## Build Collection [/builds]
+
+
+### Create a Build [POST]
++ Request (application/json)
+
+        { "title": "Build1" }
+
++ Response 201 (application/json)
+
+        { "id": 4, "title": "Build1", "hero": "Zeus",  "itemids": [1, 2, 3, 4, 5, 6] }
+
+## Builds [/builds/{id}]
+
+
++ Parameters
+    + id (required, number, `1`) ... Numeric id`of a saved build .
+
+### Retrieve Build [GET]
++ Response 200 (application/json)
+
+    + Body
+
+            { "id": 3, "title": "Enigma 6.83" "hero": "Enigma",  "itemids": [14, 83, 21, 8, 55, 46]}
+
+### Remove Build [DELETE]
++ Response 204 
+
+
