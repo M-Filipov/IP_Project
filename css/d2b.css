@@ -1,0 +1,98 @@
+.col-lg-6{
+  top: 100px
+}
+
+.stats-wrapper{
+  position: relative;
+  margin-top: 1%;
+  left: 2%;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.stats-wrapper table{
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+  background-color: inherit;
+}
+
+table, td {
+    border-color: black;
+    border-collapse: collapse;
+}
+td {
+    padding: 5px;
+}
+
+td:nth-child(even){
+  text-align: right;
+  padding-left: 20px;
+}
+
+.end-buttons li{
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;  
+}
+
+
+#heroul div{
+  display: inline;
+}
+
+#heroul div button{
+  display: inline;
+  width: 20px;
+}
+
+.input-group-btn-vertical{
+  display: inline;
+}
+
+#heroul li{
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+.row{
+  margin-top: 20%;
+  list-style-type: none;
+}
+
+.spinner {
+  width: 150px;
+}
+.spinner input {
+  text-align: right;
+}
+.input-group-btn-vertical {
+  position: relative;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+  display: table-cell;
+}
+.input-group-btn-vertical > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  margin-left: -1px;
+  position: relative;
+  border-radius: 0;
+}
+.input-group-btn-vertical > .btn:first-child {
+  border-top-right-radius: 4px;
+}
+.input-group-btn-vertical > .btn:last-child {
+  margin-top: -2px;
+  border-bottom-right-radius: 4px;
+}
+.input-group-btn-vertical i{
+  position: absolute;
+  top: 0;
+  left: 4px;
+}

@@ -4,17 +4,292 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>index</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Dota 2 Builder</title>
+
+    <link href="../../IP/Dota2Builder/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../IP/Dota2Builder/css/d2b.css" rel="stylesheet">
 
   </head>
-  <body>
-    <h1>Hello, world!</h1>
 
-    <script src="jquery-2.1.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <body>
+
+  	<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">Dota 2 Builder</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a id="help" href="#">Help</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="log-in" href="#" class="btn btn-default">Log In</a><li>
+            <li><a id="register" href="register.html" class="btn btn-default">Register</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+  	<div class="row">
+	  	<ul id="heroul">
+	  		<li>
+		  		<img id="heroimg" class="img-rounded" src="">
+		  	</li>
+		  	<li>
+	  			<select aria-expanded="false" id="heroselect" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+	  				<option value="">Abaddon</option>
+					<option value="">Alchemist</option>
+					<option value="">Ancient Apparition</option>
+					<option value="">Anti-Mage</option>
+					<option value="">Axe</option>
+					<option value="">Bane</option>
+					<option value="">Batrider</option>
+					<option value="">Beastmaster</option>
+					<option value="">Bloodseeker</option>
+					<option value="">Bounty Hunter</option>
+					<option value="">Brewmaster</option>
+					<option value="">Bristleback</option>
+					<option value="">Broodmother</option>
+					<option value="">Centaur Warrunner</option>
+					<option value="">Chaos Knight</option>
+					<option value="">Chen</option>
+					<option value="">Clinkz</option>
+					<option value="">Clockwerk</option>
+					<option value="">Crystal Maiden</option>
+					<option value="">Dark Seer</option>
+					<option value="">Dazzle</option>
+					<option value="">Death Prophet</option>
+					<option value="">Disruptor</option>
+					<option value="">Doom</option>
+					<option value="">Dragon Knight</option>
+					<option value="">Drow Ranger</option>
+					<option value="">Earth Spirit</option>
+					<option value="">Earthshaker</option>
+					<option value="">Elder Titan</option>
+					<option value="">Ember Spirit</option>
+					<option value="">Enchantress</option>
+					<option value="">Enigma</option>
+					<option value="">Faceless Void</option>
+					<option value="">Gyrocopter</option>
+					<option value="">Huskar</option>
+					<option value="">Invoker</option>
+					<option value="">Io</option>
+					<option value="">Jakiro</option>
+					<option value="">Juggernaut</option>
+					<option value="">Keeper of the Light</option>
+					<option value="">Kunkka</option>
+					<option value="">Legion Commander</option>
+					<option value="">Leshrac</option>
+					<option value="">Lich</option>
+					<option value="">Lifestealer</option>
+					<option value="">Lina</option>
+					<option value="">Lion</option>
+					<option value="">Lone Druid</option>
+					<option value="">Luna</option>
+					<option value="">Lycan</option>
+					<option value="">Magnus</option>
+					<option value="">Medusa</option>
+					<option value="">Meepo</option>
+					<option value="">Mirana</option>
+					<option value="">Morphling</option>
+					<option value="">Naga Siren</option>
+					<option value="">Nature's Prophet</option>
+					<option value="">Necrophos</option>
+					<option value="">Night Stalker</option>
+					<option value="">Nyx Assassin</option>
+					<option value="">Ogre Magi</option>
+					<option value="">Omniknight</option>
+					<option value="">Oracle</option>
+					<option value="">Outworld Devourer</option>
+					<option value="">Phantom Assassin</option>
+					<option value="">Phantom Lancer</option>
+					<option value="">Phoenix</option>
+					<option value="">Puck</option>
+					<option value="">Pudge</option>
+					<option value="">Pugna</option>
+					<option value="">Queen of Pain</option>
+					<option value="">Razor</option>
+					<option value="">Riki</option>
+					<option value="">Rubick</option>
+					<option value="">Sand King</option>
+					<option value="">Shadow Demon</option>
+					<option value="">Shadow Fiend</option>
+					<option value="">Shadow Shaman</option>
+					<option value="">Silencer</option>
+					<option value="">Skywrath Mage</option>
+					<option value="">Slardar</option>
+					<option value="">Slark</option>
+					<option value="">Sniper</option>
+					<option value="">Spectre</option>
+					<option value="">Spirit Breaker</option>
+					<option value="">Storm Spirit</option>
+					<option value="">Sven</option>
+					<option value="">Techies</option>
+					<option value="">Templar Assassin</option>
+					<option value="">Terrorblade</option>
+					<option value="">Tidehunter</option>
+					<option value="">Timbersaw</option>
+					<option value="">Tinker</option>
+					<option value="">Tiny</option>
+					<option value="">Treant</option>
+					<option value="">Troll</option>
+					<option value="">Tusk</option>
+					<option value="">Undying</option>
+					<option value="">Ursa</option>
+					<option value="">Vengeful</option>
+					<option value="">Venomancer</option>
+					<option value="">Viper</option>
+					<option value="">Visage</option>
+					<option value="">Warlock</option>
+					<option value="">Weaver</option>
+					<option value="">Windranger</option>
+					<option value="">Winter</option>
+					<option value="">Witch</option>
+					<option value="">Wraith</option>
+					<option value="">Zeus</option>
+	  			</select>
+	  		</li>
+		  		<li>
+					<div class="input-group spinner" id="lvlselect">
+						<input type="text" class="btn btn-default dropdown-toggle" value="1">
+						<div class="input-group-btn-vertical">
+							<button class="btn btn-default" id="bup"><i class="fa fa-caret-up">ʌ</i></button>
+							<button class="btn btn-default" id="bdown" ><i class="fa fa-caret-down">v</i></button>
+						</div>
+					</div>
+				</li>
+	  		</div>
+	  	</ul>
+  	</div>
+
+    <div class="stats-wrapper">
+    	<h3>Stats</h3>
+    	<table id="stats-first-column" class="table table-striped table-hover">
+		  <tr>
+		    <td>Strength: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Agility: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Intelligence: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>MS: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Turn Rate: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Sight Range: </td>	
+		    <td> 0 </td>
+		  </tr>
+    	</table>
+    	<table id="stats-second-column" class="table table-striped table-hover">
+		  <tr>
+		    <td>Armour: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Health: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Health Regen: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Mana: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Mana Regen: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Strength Gain: </td>	
+		    <td> 0 </td>
+		  </tr>
+    	</table>
+	    <table id="stats-third-column" class="table table-striped table-hover">
+		  <tr>
+		    <td>Agility Gain: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Int Gain: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>%Phys Res: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>%Bash: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>%Magic Res: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>%Lifesteal: </td>	
+		    <td> 0 </td>
+		  </tr>
+    	</table>
+	    <table id="stats-third-column" class="table table-striped table-hover">
+		  <tr>
+		    <td>%Evasion: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Damage: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Attack Time: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Base Attack Time: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Attack ⁄ Sec: </td>	
+		    <td> 0 </td>
+		  </tr>
+		  <tr>
+		    <td>Attack Range: </td>	
+		    <td> 0 </td>
+		  </tr>
+    	</table>
+   	</div>
+
+
+
+   	<ul class="end-buttons">
+	    <li><button href="#" id="SaveBtn" class="btn btn-default">Save Build</button></li>
+	    <li><button href="#" id="LoadBtn" class="btn btn-default">Load Build</button></li>
+	    <li><button href="#" id="DelBtn" class="btn btn-default">Delete Current Build</button></li>
+   	</ul>
+
+    <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="d2b.js"></script>
 
   </body>
 </html>

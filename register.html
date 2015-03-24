@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Dota 2 Builder</title>
+
+    <link href="../../IP/Dota2Builder/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../IP/Dota2Builder/css/d2b.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+  	<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand">Dota 2 Builder</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#">Help</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="log-in" href="#" class="btn btn-default">Log In</a><li>
+            <li><a id="register" href="#" class="btn btn-default">Register</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+  <div class="col-lg-6">
+    <div class="well bs-component">
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Register</legend>
+          <p>Registration enables additional features including being able to save your builds and accesing them easily at any time</p>
+          <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Username</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="inputEmail" placeholder="Username">
+              3 to 20 characters. Letters and numbers only.
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+            <div class="col-lg-10">
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              Must be at least 6 characters long.
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> I have read and agree to the ?terms and conditions?.
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <a id="register" href="#" class="btn btn-default">Submit</a>
+      </form>
+    </div>
+  </div>
+
+    
+
+    <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery.leanModal.min.js"></script>
+    <script type="text/javascript" src="d2b.js"></script>
+
+  </body>
+</html>
